@@ -1,0 +1,439 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and navigation links */
+    background-color: #2980B9;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 10px; /* Adjust the height as per your logo size */
+    width: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Other styles */
+
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 0;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-left, .scroll-right {
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 18px;
+    color: blue;
+    animation-duration: 90s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.scroll-left a, .scroll-right a {
+    text-decoration: none;
+    color: blue;
+    margin: 0 10px;
+}
+
+.scroll-left a:hover, .scroll-right a:hover {
+    text-decoration: underline;
+}
+
+.scroll-left {
+    animation-name: scrollLeft;
+}
+
+.scroll-right {
+    animation-name: scrollRight;
+}
+
+/* Left to right animation */
+@keyframes scrollLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Right to left animation */
+@keyframes scrollRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+.hero-section {
+    background-color: #E74C3C;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+}
+
+.content-section {
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #34495E;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin: 20px;
+}
+
+.job-button {
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px; /* Adjust for vertical centering of text */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.job-button:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    background-color: #333; /* Change color on hover */
+}
+
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #D1D5D8;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #2C3E50;
+    color: white;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #140706;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.view-more-btn {
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.view-more-btn:hover {
+    background-color: #21618C;
+}
+
+footer {
+    background-color: #2980B9;
+    color: white;
+    padding: 30px 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-center {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-center .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-center .footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-center .footer-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-center .footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-right p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-icons a {
+    margin-left: 10px;
+}
+
+.social-icons img {
+    height: 30px;
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+/* Your existing CSS from the previous code */
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.load-more-btn:hover {
+    background-color: #21618C;
+}
