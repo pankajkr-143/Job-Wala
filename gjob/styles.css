@@ -1,0 +1,204 @@
+/* Navbar styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between logo and navigation links */
+    background-color: #2980B9;
+    padding: 10px 20px;
+}
+
+nav .logo img {
+    height: 10px; /* Adjust the height as per your logo size */
+    width: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Other styles */
+
+
+header {
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px 0;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.table-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.job-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    min-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-table thead tr {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.job-table th,
+.job-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.job-table tbody tr {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddddd;
+}
+
+.job-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.job-table tbody tr:last-of-type {
+    border-bottom: 2px solid #007bff;
+}
+
+.job-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #218838;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #007bff;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-column h3 {
+    color: #f1f1f1;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #0d1015;
+    display: inline-block;
+}
+
+.footer-column p {
+    line-height: 1.6;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ed0a0a;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #fa0929;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #00ff3c;
+}
+
