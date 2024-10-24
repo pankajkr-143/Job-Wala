@@ -73,6 +73,25 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+.image-container {
+    width: 100%; /* Container width, you can set this to a specific value if needed */
+    max-width: 800px; /* Maximum width for the image container */
+    margin: 0 auto; /* Center the container horizontally */
+    height: auto; /* Make the height responsive */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically (if container has a fixed height) */
+    overflow: hidden; /* Optional: Hide overflow if image exceeds container size */
+}
+
+.perfect-image {
+    width: 100%; /* Scale the image to fit the container width */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 400px; /* Set a maximum height */
+    object-fit: contain; /* Ensure the image is scaled without distortion */
+    display: block;
+}
+
 .table-container {
     max-width: 50%;
     margin: 0 auto;
