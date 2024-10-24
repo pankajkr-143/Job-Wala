@@ -99,6 +99,7 @@ nav ul li a:hover {
 .job-table td {
     padding: 12px 15px;
     border: 1px solid #dddddd;
+    vertical-align: top;
 }
 
 .job-table tbody tr {
