@@ -215,7 +215,7 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin: 20px auto;
 }
 
 thead {
@@ -227,6 +227,7 @@ th, td {
     padding: 12px 15px;
     text-align: center;
     border: 1px solid #ddd;
+    vertical-align: top;
 }
 
 tbody tr:hover {
