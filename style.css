@@ -432,6 +432,40 @@ footer {
     cursor: pointer;
 }
 
+/* Subscription Box Styles */
+.subscribe-container {
+    padding: 5px;
+    border-radius: 0px;
+    width: 100%;
+    color: #000;
+}
+
+.subscribe-container h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#email {
+    width: 75%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.subscribe-button {
+    background-color: #f10e0e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #fd0909;
+}
+
 /* Media Queries for responsive design */
 @media (max-width: 768px) {
     header .container {

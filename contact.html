@@ -33,14 +33,19 @@
 
     <div class="contact-form-container">
     <h2>Contact Us</h2>
-    <form class="contact-form">
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
+        <input type="hidden" name="access_key" value="4d0d0d9e-967e-4958-b48a-fc61155547ef">
         <div class="form-group">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" placeholder="Jobs Wala" required>
         </div>
         <div class="form-group">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" placeholder="jobwala143@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Mobile No.:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 8230000315" required>
         </div>
         <div class="form-group">
             <label for="subject">Subject:</label>
