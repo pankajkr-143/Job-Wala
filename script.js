@@ -1,15 +1,16 @@
 // Search functionality
 const searchInput = document.getElementById('search-input');
-const tableRows = document.querySelectorAll('#workTable tbody tr');
+const jobLinks = document.querySelectorAll('#workTable tbody tr td ul li');
 
 searchInput.addEventListener('input', function () {
     const filter = searchInput.value.toLowerCase();
-    tableRows.forEach(row => {
-        const cells = row.querySelectorAll('td');
-        const rowText = Array.from(cells).map(cell => cell.textContent.toLowerCase()).join(' ');
-        row.style.display = rowText.includes(filter) ? '' : 'none';
+    
+    jobLinks.forEach(job => {
+        const text = job.textContent.toLowerCase();
+        job.style.display = text.includes(filter) ? '' : 'none';
     });
 });
+
 
 // Load more jobs functionality
 const loadMoreBtn = document.getElementById('loadMoreBtn');
@@ -25,18 +26,20 @@ const moreJobs = [
 ];
 
 // Add new jobs when 'View More Jobs' is clicked
-loadMoreBtn.addEventListener('click', function () {
-    moreJobs.forEach(job => {
-        const newRow = document.createElement('tr');
-        newRow.innerHTML = `
-            <td>${job.type}</td>
-            <td>${job.title}</td>
-            <td>${job.date}</td>
-            <td><a href="${job.link}">View</a></td>
-        `;
-        workTableBody.appendChild(newRow);
-    });
+if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function () {
+        moreJobs.forEach(job => {
+            const newRow = document.createElement('tr');
+            newRow.innerHTML = `
+                <td>${job.type}</td>
+                <td>${job.title}</td>
+                <td>${job.date}</td>
+                <td><a href="${job.link}">View</a></td>
+            `;
+            workTableBody.appendChild(newRow);
+        });
 
-    // Hide the button after loading more jobs
-    loadMoreBtn.style.display = 'none';
-});
+        // Hide the button after loading more jobs
+        loadMoreBtn.style.display = 'none';
+    });
+}
